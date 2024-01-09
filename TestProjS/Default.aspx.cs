@@ -11,15 +11,22 @@ namespace TestProjS {
 		protected void Page_Load(object sender, EventArgs e) {
 
 		}
-		protected void btn_onclick(object sender, EventArgs e) {
-			Response.Redirect("~/Contact");
-		}
+		//protected void btn_onclick(object sender, EventArgs e) {
+		//	Response.Redirect("~/Contact");
+		//}
 
 		[WebMethod]
-		[System.Web.Script.Services.ScriptMethod]
 		public static string ScanResult(string parameter) {
 			// Your server-side logic here
 			return "Result from server: " + parameter;
 		}
-	}
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            string inputValue = textInput.Value;
+            Session["inputValue"] = inputValue;
+
+            Response.Redirect("ScanResult.aspx"); 
+        }
+    }
 }

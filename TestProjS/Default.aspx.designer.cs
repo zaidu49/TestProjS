@@ -7,9 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestProjS {
+namespace TestProjS
+{
 
 
-	public partial class _Default {
-	}
+    public partial class _Default
+    {
+
+        /// <summary>
+        /// textInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText textInput;
+
+        /// <summary>
+        /// submitButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitButton;
+    }
 }
